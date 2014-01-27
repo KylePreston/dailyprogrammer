@@ -13,3 +13,12 @@ def circle_area(x1, y1, x2, y2):
 		return 2 * pi
 	else:
 		return (2 * pi) - ((2 * acos(dist/2)) + (dist/2) * sqrt(4 - dist ** 2))
+
+inputs = []
+
+for i in range(4):
+	cord = int(raw_input('Enter coordinate #%d: ' % (i + 1)))
+	inputs.append(cord)
+
+print ("Total area: "),
+print (circle_area(inputs.pop(), inputs.pop(), inputs.pop(), inputs.pop()))
