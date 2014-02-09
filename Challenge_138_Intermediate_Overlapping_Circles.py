@@ -1,4 +1,9 @@
 # My solution to /r/dailyprogrammer
+# Goal is to write a program that takes two unit-circles (radius of one) at given locations
+# and compute that shape's volume. You must make sure to not double-count the intersecting volume!
+# (i.e. you must not sum this red area twice). 
+
+
 # Assuming unit circles
 
 from math import acos, pi, sqrt
