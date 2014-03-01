@@ -1,3 +1,4 @@
+# Disemvoweling means removing the vowels from text
 vowel = 'aeiou'
 print "Press CTRL-Z to escape"
 def disemvoweler(sentence):
