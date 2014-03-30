@@ -16,7 +16,7 @@ def displayPascal(tiers):
 		row_list = []
 		for r in range(i+1):
 			row_list.append(factorial(i)/(factorial(r)*factorial(i-r)))
-		print(' '*(tiers-i)),
+		print(' '*(tiers-i)),    # Print spaces to stack the tiers like a pyramid
 		print(row_list)
 
 tiers = int(raw_input('How many tiers? '))
