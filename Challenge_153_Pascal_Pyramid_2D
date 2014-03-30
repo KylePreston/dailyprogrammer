@@ -12,12 +12,15 @@ def displayPascal(tiers):
 	with zero. 
 	'''
 
-	for i in range(tiers):
+	for i in xrange(tiers):
 		row_list = []
-		for r in range(i+1):
+		for r in xrange(i+1):
 			row_list.append(factorial(i)/(factorial(r)*factorial(i-r)))
-		print(' '*(tiers-i)),    # Print spaces to stack the tiers like a pyramid
-		print(row_list)
+		tier_display = ''
+		for num in row_list:
+			num = str(num)
+			tier_display += num + ' '
+		print tier_display.center(tiers*5)	#Centers the tiers around a common midpoint
 
 tiers = int(raw_input('How many tiers? '))
 	
