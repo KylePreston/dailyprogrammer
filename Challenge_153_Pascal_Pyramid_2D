@@ -5,19 +5,19 @@ def displayPascal(tiers):
 
 	Using 			    n!
 				--------- ,
-				 r!(n-r)!
+				 k!(n-k)!
 
 	One can calculate any number in Pascal's Triangle where n is 
-	the nth row, beginning with zero and r is the rth column beginning
+	the nth row, beginning with zero and k is the kth column beginning
 	with zero. 
 	'''
 
 	for i in xrange(tiers):
-		row_list = []
+		col_list = []
 		for r in xrange(i+1):
-			row_list.append(factorial(i)/(factorial(r)*factorial(i-r)))
+			col_list.append(factorial(i)/(factorial(r)*factorial(i-r)))
 		tier_display = ''
-		for num in row_list:
+		for num in col_list:
 			num = str(num)
 			tier_display += num + ' '
 		print tier_display.center(tiers*5)	#Centers the tiers around a common midpoint
